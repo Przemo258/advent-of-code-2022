@@ -14,8 +14,9 @@ with open('data/input.txt', 'r') as file:
             simulator.move_left(times)
         elif direction == 'R':
             simulator.move_right(times)
-    simulator.print_game_board()
-    
+    # uncomment to see path :D
+    # simulator.print_game_board()
+
     # part 1
     print(f'The tail 1 was on {simulator.count_moves("1")} positions')  # 6642
     # part 2
